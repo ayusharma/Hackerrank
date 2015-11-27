@@ -70,9 +70,6 @@ True
 """
 
 string = raw_input()
-print string
-a = list(string)
-print a
 
 print any(c.isalnum() for c in string)
 print any(c.isalpha() for c in string)
