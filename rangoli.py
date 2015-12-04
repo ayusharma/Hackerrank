@@ -52,7 +52,7 @@ from collections import defaultdict
 d = defaultdict(list)
 num = input()
 alph = list(string.ascii_lowercase)
-print alph
+# print alph
 
 
 # for i in xrange(num):
@@ -82,7 +82,7 @@ for i in range(1,len(d)+1):
 		d[i] = d[temp]
 		temp = temp -1
 		
-print d
+# print d
 
 for i in range(1,len(d)+1):
 	print ''.join(d[i])
