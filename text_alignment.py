@@ -9,6 +9,7 @@ Returns left aligned string of length width.
 >>> width = 20
 >>> print 'HackerRank'.ljust(width,'-')
 HackerRank----------  
+
 .center(width)
 
 Returns centered string of length width.
@@ -16,6 +17,8 @@ Returns centered string of length width.
 >>> width = 20
 >>> print 'HackerRank'.center(width,'-')
 -----HackerRank-----
+
+
 .rjust(width)
 
 Returns right aligned string of length width.

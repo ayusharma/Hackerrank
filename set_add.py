@@ -58,4 +58,4 @@ b = set()
 for i in xrange(a):
 	b.add(raw_input())
 
-print b
+print len(b)

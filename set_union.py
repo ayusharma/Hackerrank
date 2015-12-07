@@ -73,4 +73,4 @@ u = el.union(fl)
 
 print u
 
-print e+f-len(u)
+print len(u)
