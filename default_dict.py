@@ -15,7 +15,7 @@ This prints:
 ('something-else', ['not relevant'])
 
 """
-
+"""
 from collections import defaultdict
 d = defaultdict(list)
 e = defaultdict(list)
@@ -40,7 +40,7 @@ print e
 for i in xrange(len(e)):
 	print ' '.join(map(str,e[i][0]))
 
-
+"""
 
 
 
