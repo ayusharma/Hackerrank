@@ -42,6 +42,33 @@ for i in xrange(len(e)):
 
 """
 
+from collections import defaultdict
+a,b  = map(int,raw_input().split())
+d = defaultdict(list)
+for i in xrange(a):
+    d['n'].append(raw_input())
+    
+for i in xrange(b):
+    d['m'].append(raw_input())
+    
+m = defaultdict(list)
+
+for i,k in enumerate(d['m']):
+    l = [x+1 for x,y in enumerate(d['n']) if y == k] 
+    m[k].append(l)
+    if k not in d['n']:
+         m[k][0].append(-1)
+#    for x,y in enumerate(d['n']):
+#        print y,k
+#        if y == k :
+#            m[y].append(x+1)
+#        else:
+#            m[y].append(-1)
+            
+#print m
+for i in d['m']:
+    print ' '.join(map(str,m[i][0]))
+
 
 
 
