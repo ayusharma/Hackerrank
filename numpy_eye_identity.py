@@ -54,3 +54,8 @@ Sample Output
  [ 0.  0.  1.]]
 
  """
+
+
+import numpy
+k = map(int,raw_input().split())
+print numpy.eye(k[0],k[1])
