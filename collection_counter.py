@@ -72,19 +72,17 @@ Customer 6 : Size 10 not available, so no purchase.
 Total money earned = 55 + 45 + 40 + 60 = $ 200
 
 """
-
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 from collections import Counter
-X = input()
-N = map(int,raw_input().split())
-x = input()
-L = map(tuple,(map(int,raw_input().split()) for _ in xrange(x)))
+X = int(input())
+N = map(int,input().split())
+x = int(input())
+L = map(tuple,(map(int,input().split()) for _ in range(x)))
 n = Counter(N)
 p =0
 for i in L:
     if i[0] in n.keys() and n[i[0]] >0 :
         n[i[0]] = n[i[0]]-1
         p = p+i[1]
-      
-    
-print p
+          
+print(p)
