@@ -79,8 +79,8 @@ Day on 5th August 2015 is WEDNESDAY
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 import calendar
-k = map(int,raw_input().split())
-m = calendar.weekday(k[2],k[0],k[1])
-w = ['MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY','SUNDAY']
 
-print w[m]
+day = {0:'MONDAY', 1:'TUESDAY', 2:'WEDNESDAY', 3:'THURSDAY', 4:'FRIDAY', 5:'SATURDAY', 6:'SUNDAY'}
+
+m,d,y = map(int,input().split())
+print(day[calendar.weekday(y,m,d)])
