@@ -45,9 +45,12 @@ Sample Designs
 """
 
 
-N, M = map(int,raw_input().split()) # More than 6 lines of code will result in 0 score. Blank lines are not counted.
-for i in xrange(0,N/2): 
-    print ('.|.'*i).rjust((M-2)/2,'-')+'.|.'+('.|.'*i).ljust((M-2)/2,'-')
-print 'WELCOME'.center(M,'-')
-for i in reversed(xrange(0,N/2)): 
-    print ('.|.'*i).rjust((M-2)/2,'-')+'.|.'+('.|.'*i).ljust((M-2)/2,'-')
+import math
+N, M = map(int, input().split()) 
+for i in range(0,math.floor(N/2)): 
+    s='.|.'*i
+    print (s.rjust(math.floor((M-2)/2),'-')+'.|.'+('.|.'*i).ljust(math.floor((M-2)/2),'-'))
+print ('WELCOME'.center(M,'-'))
+for i in reversed(range(0,math.floor(N/2))): 
+    s='.|.'*i
+    print (s.rjust(math.floor((M-2)/2),'-')+'.|.'+('.|.'*i).ljust(math.floor((M-2)/2),'-'))
