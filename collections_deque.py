@@ -86,8 +86,8 @@ Sample Output
  
 from collections import deque
 d = deque()
-for i in xrange(input()):
-    k = raw_input().split()
+for i in range(int(input())):
+    k = input().split()
     if k[0] == 'append':
         d.append(int(k[1]))
     elif k[0] == 'pop':
@@ -96,4 +96,4 @@ for i in xrange(input()):
         d.popleft()
     elif k[0] == 'appendleft':
         d.appendleft(int(k[1]))
-print ' '.join(map(str,d))
+print (' '.join(map(str,d)))
